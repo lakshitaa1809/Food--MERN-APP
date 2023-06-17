@@ -1,0 +1,106 @@
+.Footer_container {
+  width: 100%;
+  margin-top: 10rem;
+  border-top: 1px solid grey;
+  margin-bottom: 2rem;
+}
+
+.Footer_wrapper {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.col1 {
+  margin-right: 10px;
+}
+.col:nth-child(2) {
+  align-items: center;
+}
+
+.col:last-child {
+  align-items: flex-end;
+}
+
+.Footer_title {
+  margin-top: 10px;
+  color: #444;
+  margin-bottom: 16px;
+}
+.Footer_title1 {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  margin-left: 150px;
+}
+.Footer_list {
+  display: flex;
+  gap: 6px;
+  list-style: none;
+}
+.Footer_sat {
+  margin-left: 130px;
+}
+
+.Footer_list > li {
+  color: #777;
+  font-size: 18px;
+}
+
+.Footer_list > .workingTime {
+  color: #000;
+  font-size: 20px;
+}
+
+.Footer_list > .workingTime:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.iconList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 150px;
+  font-size: 30px;
+  list-style: none;
+  cursor: pointer;
+  transition: 150ms all;
+}
+
+.iconList > *:hover {
+  color: #444;
+}
+
+.attribution {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  margin-left: 12.5rem;
+  margin-top: 5rem;
+  padding-bottom: 2.5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #222;
+  transition: 150ms all;
+}
+
+.attribution a:hover {
+  color: #777;
+}

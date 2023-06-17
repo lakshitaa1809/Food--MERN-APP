@@ -1,0 +1,71 @@
+.Home_container {
+  width: 100%;
+}
+
+.Home_deliveryInfos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home_titles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  color: rgb(111, 0, 255);
+  margin-bottom: 2rem;
+  margin-top: 12rem;
+}
+
+.DeliverySubtitle {
+  text-align: center;
+  font-size: 28px;
+  color: rgb(111, 0, 255);
+}
+
+.DeliveryTitle {
+  text-align: center;
+  color: #f00;
+  font-size: 20px;
+  font-weight: bold;
+}
+.DeliveryInfos {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+.DeliveryInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.DeliveryInfo > h3 {
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.FirstImg {
+  width: 200px;
+  border: 1px;
+  border-radius: 5px;
+}
+
+.SecondImg {
+  width: 250px;
+  border: 1px;
+  border-radius: 5px;
+}
+
+.ThirdImg {
+  width: 240px;
+  border: 1px;
+  border-radius: 5px;
+}
