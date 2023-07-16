@@ -8,9 +8,11 @@ import { useEffect } from "react";
 const Catalog = () => {
   const [filteredFoods, setFilteredFoods] = useState([]);
   const location = useLocation();
+  console.log(location.pathname);
   const foodEndpoint = location.pathname.split("/")[2];
+  console.log(foodEndpoint);
   const { token } = useSelector((state) => state.auth);
-
+  console.log(token);
   useEffect(() => {
     const fetchFoodType = async () => {
       const res = await fetch(
@@ -23,6 +25,7 @@ const Catalog = () => {
       );
 
       const data = await res.json();
+      console.log(data);
       setFilteredFoods(data);
     };
     fetchFoodType();

@@ -41,7 +41,7 @@ const Login = () => {
     <div className="loginContainer">
       <div className="loginWrapper">
         <div className="loginLeftSide">
-          <img src={img} className="leftImg" />
+          <img src={img} className="leftImg" alt="" />
         </div>
         <div className="loginRightSide">
           <h2 className="logintitle">Login</h2>

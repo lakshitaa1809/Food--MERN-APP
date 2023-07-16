@@ -38,7 +38,7 @@ const Cart = () => {
                   <AiOutlineClose />
                 </div>
                 <img
-                  src={`http://localhost:5010/images/${product.img}`}
+                  src={`https://localhost:5010/images/${product.img}`}
                   className="Card_img"
                   alt="Card_img"
                 />
