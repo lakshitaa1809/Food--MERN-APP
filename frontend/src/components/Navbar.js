@@ -46,7 +46,7 @@ const Navbar = () => {
           <AiOutlineUser className="UserIcon" />
           <Link to="/cart" className="cart_container">
             <AiOutlineShoppingCart className="CartIcon" />
-            <div className="Nav_CartQuantity">{products.length - 1}</div>
+            <div className="Nav_CartQuantity">{products.length}</div>
           </Link>
           <button onClick={handleLogout} className="Logout">
             Logout
