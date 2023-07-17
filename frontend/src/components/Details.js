@@ -52,6 +52,7 @@ const Details = () => {
           <img
             src={`https://food-app-8d87.onrender.com/images/${foodDetails?.img}`}
             alt="img"
+            className="details_img"
           />
         </div>
         <div className="Detail_right">

@@ -45,15 +45,19 @@
 }
 
 .Cart_productData {
-  padding: 0.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+.Cart_productAndQuantity {
+  padding: 0.5rem 0.1rem;
+  display: flex;
+  flex-direction: column;
+}
 
-.Cart_product > .img {
-  width: 175px;
-  height: 175px;
+.Cart_product > img {
+  width: 150px;
+  height: 150px;
   object-fit: cover;
 }
 
@@ -65,7 +69,6 @@
 .Cart_quantity {
   font-size: 18px;
   position: relative;
-  bottom: 300px;
 }
 
 .Cart_right {

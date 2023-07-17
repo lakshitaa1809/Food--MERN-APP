@@ -73,7 +73,7 @@
 }
 
 .signUpForm > .submitBtn {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   outline: none;
   border: 1px solid transparent;
   padding: 0.5rem 1.5rem;
@@ -118,4 +118,8 @@
   position: absolute;
   top: 5rem;
   right: 5rem;
+}
+.loginbtn {
+  position: relative;
+  bottom: 25px;
 }

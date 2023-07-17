@@ -38,14 +38,16 @@ const Cart = () => {
                   <AiOutlineClose />
                 </div>
                 <img
-                  src={`https://localhost:5010/images/${product.img}`}
+                  src={`https://food-app-8d87.onrender.com/images/${product.img}`}
                   className="Card_img"
                   alt="Card_img"
                 />
                 <div className="Cart_productData">
                   <h3 className="Cart_title">{product.title}</h3>
                   <div className="Cart_productAndQuantity">
-                    <span className="Cart_quantity">{product.quantity} </span>
+                    <span className="Cart_quantity">
+                      Total Quantity:{product.quantity}{" "}
+                    </span>
                     <span className="Cart_price">
                       <span>INR </span>
                       {product.price}
