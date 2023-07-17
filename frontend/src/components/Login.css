@@ -130,3 +130,7 @@
   right: 5rem;
   font-weight: 500;
 }
+.sgn_btn {
+  position: relative;
+  bottom: 20px;
+}
