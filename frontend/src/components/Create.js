@@ -38,7 +38,7 @@ const Create = () => {
         formData.append("filename", filename);
         formData.append("image", image);
 
-        await fetch(`http://localhost:5010/upload/image`, {
+        await fetch(`https://food-app-8d87.onrender.com/upload/image`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -48,7 +48,7 @@ const Create = () => {
       }
 
       // uploading product
-      const res = await fetch(`http://localhost:5010/product`, {
+      const res = await fetch(`https://food-app-8d87.onrender.com/product`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,

@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:5010/auth/login`, {
+      const res = await fetch(`https://food-app-8d87.onrender.com/auth/login`, {
         headers: {
           "Content-Type": "application/json",
         },

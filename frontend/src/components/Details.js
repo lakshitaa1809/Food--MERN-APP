@@ -18,11 +18,14 @@ const Details = () => {
 
   useEffect(() => {
     const fetchFoodDetails = async () => {
-      const res = await fetch(`http://localhost:5010/product/find/${id}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const res = await fetch(
+        `https://food-app-8d87.onrender.com/product/find/${id}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       const data = await res.json();
       setFoodsDetails(data);
     };
@@ -47,7 +50,7 @@ const Details = () => {
       <div className="Detail_wrapper">
         <div className="Detail_left">
           <img
-            src={`http://localhost:5010/images/${foodDetails?.img}`}
+            src={`https://food-app-8d87.onrender.com/images/${foodDetails?.img}`}
             alt="img"
           />
         </div>

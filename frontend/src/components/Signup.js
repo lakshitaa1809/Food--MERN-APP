@@ -17,13 +17,16 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:5010/auth/register`, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-        body: JSON.stringify({ username, email, password }),
-      });
+      const res = await fetch(
+        `https://food-app-8d87.onrender.com/auth/register`,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+          method: "POST",
+          body: JSON.stringify({ username, email, password }),
+        }
+      );
 
       const data = await res.json();
       dispatch(register(data));
