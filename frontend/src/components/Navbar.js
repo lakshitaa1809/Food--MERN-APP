@@ -14,9 +14,6 @@ const Navbar = () => {
     dispatch(logout());
     navigate("/login");
   };
-  let totalQuantity = 0;
-
-  products.map((prod) => (totalQuantity = prod.quantity * products.length));
 
   return (
     <div className="Nav_container">
@@ -49,9 +46,7 @@ const Navbar = () => {
           <AiOutlineUser className="UserIcon" />
           <Link to="/cart" className="cart_container">
             <AiOutlineShoppingCart className="CartIcon" />
-            <div className="Nav_CartQuantity">
-              {products.length * totalQuantity}
-            </div>
+            <div className="Nav_CartQuantity">{products.length}</div>
           </Link>
           <button onClick={handleLogout} className="Logout">
             Logout
