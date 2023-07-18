@@ -11,6 +11,9 @@ const Cart = () => {
   const navigate = useNavigate();
 
   let totalPrice = 0;
+  let totalQuantity = 0;
+ 
+  products.map((prod) => (totalQuantity = prod.quantity * products.length));
   products.map((product) => (totalPrice += product.quantity * product.price));
 
   const handleRemoveProduct = (id) => {
@@ -46,7 +49,7 @@ const Cart = () => {
                   <h3 className="Cart_title">{product.title}</h3>
                   <div className="Cart_productAndQuantity">
                     <span className="Cart_quantity">
-                      Total Quantity:{product.quantity}{" "}
+                    Total Quantity:{totalQuantity}{" "}
                     </span>
                     <span className="Cart_price">
                       <span>INR </span>
