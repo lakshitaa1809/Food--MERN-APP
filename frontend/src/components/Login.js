@@ -38,7 +38,7 @@ const Login = () => {
   };
 
   return (
-    <div className="loginContainer">
+    <div name="login" className="loginContainer">
       <div className="loginWrapper">
         <div className="loginLeftSide">
           <img src={img} className="leftImg" alt="" />

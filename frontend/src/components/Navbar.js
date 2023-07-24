@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -28,17 +28,17 @@ const Navbar = () => {
         <div className="Nav_center">
           <ul className="Nav_list">
             <li className="Nav_listItem">
-              <a href="#">Home</a>
+              <Link to="/">HOME</Link>
             </li>
             <li className="Nav_listItem">
-              <a href="#items">Items</a>
+              <Link to="/Items">ITEMS</Link>
             </li>
 
             <li className="Nav_listItem">
-              <a href="#contacts">Contacts</a>
+              <Link to="CONTACTS">CONTACTS</Link>
             </li>
             <li className="Nav_listItem">
-              <Link to="/create">Create</Link>
+              <Link to="CREATE">Create</Link>
             </li>
           </ul>
         </div>

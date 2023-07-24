@@ -13,6 +13,7 @@ import Checkout from "./components/Checkout";
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Foods from "./components/Food";
 
 function App() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/create" element={<Create />} />
+        <Route path="/items" element={<Foods />} />
         <Route path="/food/:id" element={<Details />} />
         <Route path="/foods/:id" element={<Catalog />} />
         <Route path="/cart" element={<Cart />} />

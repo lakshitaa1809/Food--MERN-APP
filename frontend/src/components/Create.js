@@ -73,7 +73,7 @@ const Create = () => {
   };
 
   return (
-    <div className="Create_container">
+    <div name="CREATE" className="Create_container">
       <div className="Create_wrapper">
         <h2 className="Create_title">Create food</h2>
         <form onSubmit={handleCreateProduct} encType="multipart/form-data">

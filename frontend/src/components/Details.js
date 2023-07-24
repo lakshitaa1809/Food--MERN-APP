@@ -46,7 +46,7 @@ const Details = () => {
   };
 
   return (
-    <div className="Detail_container">
+    <div name="details" className="Detail_container">
       <div className="Detail_wrapper">
         <div className="Detail_left">
           <img

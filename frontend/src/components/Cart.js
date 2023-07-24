@@ -11,8 +11,9 @@ const Cart = () => {
   const navigate = useNavigate();
 
   let totalPrice = 0;
+
   products.map((product) => (totalPrice += product.quantity * product.price));
-  products.map((prod) => (totalQuantity = prod.quantity * products.length));
+
   const handleRemoveProduct = (id) => {
     console.log(id);
     dispatch(removeProduct({ _id: id }));
@@ -64,7 +65,7 @@ const Cart = () => {
         </div>
         <div className="Cart_right">
           <div className="Cart_totalProductMsg">
-            Total products: {products.length * totalQuantity}
+            Total products: {products.length}
           </div>
           <div className="Cart_subtotalCheckoutBtns">
             <span className="Cart_subtotal">Total: INR {totalPrice}</span>

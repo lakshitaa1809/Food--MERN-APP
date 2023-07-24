@@ -5,7 +5,7 @@ import "./Food.css";
 
 const Foods = () => {
   return (
-    <section id="foods" className="food_container">
+    <div name="items" className="food_container">
       <div className="food_wrapper">
         <h4 className="food_subtitle">What we offer</h4>
         <h2 className="food_title">Best meals in the city</h2>
@@ -18,13 +18,13 @@ const Foods = () => {
             >
               <h4 className="food_name">{foodType.name}</h4>
               <div className="imgContainer">
-                <img src={foodType?.img} />
+                <img src={foodType?.img} alt="" />
               </div>
             </Link>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 
 const Hero = () => {
   return (
-    <div>
+    <div name="HOME">
       <section id="Home" className="Hero_container">
         <div className="Hero_wrapper">
           <div className="Hero_left">
