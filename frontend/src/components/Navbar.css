@@ -6,13 +6,7 @@
   height: 60px;
   background-color: blue;
 }
-/* 5 9s */
 
-.scrolled {
-  box-shadow: -5px 5px 19px -5px rgba(0, 0, 0, 0.08);
-  -webkit-box-shadow: -5px 5px 19px -5px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: -5px 5px 19px -5px rgba(0, 0, 0, 0.08);
-}
 
 .Nav_wrapper {
   width: 85%;
