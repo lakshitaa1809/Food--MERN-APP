@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <section className="Footer_container">
+    <div name="contacts" className="Footer_container">
       <div className="Footer_wrapper">
         <div className="col">
           <h2 className="Footer_title">Working days</h2>
@@ -38,7 +38,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

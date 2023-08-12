@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -7,12 +7,16 @@ import { logout } from "../redux/authSlice";
 
 const Navbar = () => {
   const { products } = useSelector((state) => state.cart);
+  const { user } = useSelector((state) => state.auth);
+  const [showOrders, setShowOrders] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const handleLogin = () => {
+    navigate("/login");
+  };
   const handleLogout = () => {
     dispatch(logout());
-    navigate("/login");
   };
 
   return (
@@ -28,29 +32,50 @@ const Navbar = () => {
         <div className="Nav_center">
           <ul className="Nav_list">
             <li className="Nav_listItem">
-              <Link to="/">HOME</Link>
+              <a href="#">Home</a>
             </li>
             <li className="Nav_listItem">
-              <Link to="/Items">ITEMS</Link>
+              <a href="#items">Items</a>
             </li>
 
             <li className="Nav_listItem">
-              <Link to="CONTACTS">CONTACTS</Link>
+              <a href="#contacts">Contacts</a>
             </li>
             <li className="Nav_listItem">
-              <Link to="CREATE">Create</Link>
+              <Link to="/create">Create</Link>
             </li>
           </ul>
         </div>
         <div className="Nav_right">
-          <AiOutlineUser className="UserIcon" />
-          <Link to="/cart" className="cart_container">
-            <AiOutlineShoppingCart className="CartIcon" />
-            <div className="Nav_CartQuantity">{products.length}</div>
-          </Link>
-          <button onClick={handleLogout} className="Logout">
-            Logout
-          </button>
+          {" "}
+          {!user ? (
+            <AiOutlineUser className="UserIcon" />
+          ) : (
+            <h2
+              className="UserIcon"
+              onClick={() => setShowOrders((prev) => !prev)}
+            >
+              {user.username}
+            </h2>
+          )}
+          {showOrders && (
+            <div className="orders">
+              <Link className="orders" to="/cart">
+                <h3 className="orders">Orders</h3>
+              </Link>
+            </div>
+          )}
+          <AiOutlineShoppingCart className="CartIcon" />
+          <div className="Nav_CartQuantity">{products.length}</div>
+          {!user ? (
+            <button onClick={handleLogin} className="Logout">
+              Login
+            </button>
+          ) : (
+            <button onClick={handleLogout} className="Logout">
+              Logout
+            </button>
+          )}
         </div>
       </div>
     </div>

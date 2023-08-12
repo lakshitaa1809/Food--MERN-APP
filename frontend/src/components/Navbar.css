@@ -82,8 +82,11 @@
 
 .UserIcon,
 .CartIcon {
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
+}
+.UserIcon:hover {
+  color: red;
 }
 
 .Nav_CartQuantity {
@@ -92,8 +95,8 @@
   height: 18px;
   background-color: #f00;
   color: #fff;
-  left: 10px;
-  bottom: 15px;
+  left: 1450px;
+  bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,5 +115,18 @@
   color: white;
 }
 .Logout:hover {
+  color: red;
+}
+.orders {
+  color: white;
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  top: 2.5px;
+}
+.orders:hover {
   color: red;
 }
