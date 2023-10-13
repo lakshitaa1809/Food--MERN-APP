@@ -29,6 +29,7 @@ const Navbar = () => {
             alt="logo"
           />
         </div>
+
         <div className="Nav_center">
           <ul className="Nav_list">
             <li className="Nav_listItem">
@@ -65,8 +66,10 @@ const Navbar = () => {
               </Link>
             </div>
           )}
-          <AiOutlineShoppingCart className="CartIcon" />
-          <div className="Nav_CartQuantity">{products.length}</div>
+          <Link className="orders" to="/cart">
+            <AiOutlineShoppingCart className="CartIcon" />
+            <div className="Nav_CartQuantity">{products.length}</div>
+          </Link>
           {!user ? (
             <button onClick={handleLogin} className="Logout">
               Login
